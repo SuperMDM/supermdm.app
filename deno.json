@@ -1,0 +1,33 @@
+{
+    "imports": {
+        "webgen/": "https://raw.githubusercontent.com/lucsoft/WebGen/2d77f48/"
+    },
+    "lock": false,
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "dom.asynciterable",
+            "deno.ns",
+            "deno.unstable"
+        ]
+    },
+    "tasks": {
+        "start": "deno run -A serve.ts"
+    },
+    "lint": {
+        "exclude": [
+            "dist"
+        ]
+    },
+    "fmt": {
+        "exclude": [
+            "dist",
+            "assets",
+            "static"
+        ],
+        "indentWidth": 4,
+        "proseWrap": "never",
+        "lineWidth": 500
+    }
+}
